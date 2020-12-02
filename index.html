@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+	<title>Jogo da Velha</title>
+	<meta charset="utf-8">
+	<link rel="sortcut icon" href="imagens/widgets/estrela.ico" type="image/x-icon" />;
+	<link rel="stylesheet" type="text/css" href="css/principal.css">
+	<link rel="stylesheet" type="text/css" href="css/mediascreen.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script type="text/javascript" src="js/jvinicio.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body onload="load();"><!--FUNÇÃO PARA MOBILE-->
+
+	<h1  id="title">JOGO DA VELHA</h1><!--NOME DO JOGO-->
+
+	<div class="container"><!--CONTAINER-->
+
+		<div id="tabuleiro" class="tabuleiro"><!--TABULEIRO DO JOGO- PRINCIPAL-->
+
+			<input type="button" class="quadros" id="0" value=" " onclick="marcar(this)"><!--REFERENTE AOS QUADRADOS ONDE SERÃO MARCADOS-->
+			<input type="button" class="quadros" id="1" value=" " onclick="marcar(this)"><!--REFERENTE AOS QUADRADOS ONDE SERÃO MARCADOS-->
+			<input type="button" class="quadros" id="2" value=" " onclick="marcar(this)"><!--REFERENTE AOS QUADRADOS ONDE SERÃO MARCADOS-->
+			<input type="button" class="quadros" id="3" value=" " onclick="marcar(this)"><!--REFERENTE AOS QUADRADOS ONDE SERÃO MARCADOS-->
+			<input type="button" class="quadros" id="4" value=" " onclick="marcar(this)"><!--REFERENTE AOS QUADRADOS ONDE SERÃO MARCADOS-->
+			<input type="button" class="quadros" id="5" value=" " onclick="marcar(this)"><!--REFERENTE AOS QUADRADOS ONDE SERÃO MARCADOS-->
+			<input type="button" class="quadros" id="6" value=" " onclick="marcar(this)"><!--REFERENTE AOS QUADRADOS ONDE SERÃO MARCADOS-->
+			<input type="button" class="quadros" id="7" value=" " onclick="marcar(this)"><!--REFERENTE AOS QUADRADOS ONDE SERÃO MARCADOS-->
+			<input type="button" class="quadros" id="8" value=" " onclick="marcar(this)"><!--REFERENTE AOS QUADRADOS ONDE SERÃO MARCADOS-->
+		</div>
+			
+		<!--IMAGENS DOS PERSONAGENS DO JOGADOR 1-->
+			<img src="imagens/personagens/mario.png" id="mario" class="img1 mario">
+			<img src="imagens/personagens/Luigi.png" id="luigi" class="img1 luigi">
+			<img src="imagens/personagens/peach.png" id="peach" class="img1 peach">
+			<img src="imagens/personagens/yoshi.png" id="yoshi" class="img1 yoshi">
+			<img src="imagens/personagens/toad.png" id="toad" class="img1 toad">
+		<!--///////////////////////////////////////////////////////-->
+
+
+		<!--IMAGENS DOS PERSONAGENS DO JOGADOR 2-->
+			<img src="imagens/personagens/bowser.png" id="bowser" class="img2 bowser">
+			<img src="imagens/personagens/mario2.png" id="mario2" class="img2 mario">
+			<img src="imagens/personagens/Luigi2.png" id="luigi2" class="img2 luigi">
+			<img src="imagens/personagens/peach2.png" id="peach2" class="img2 peach">
+			<img src="imagens/personagens/yoshi2.png" id="yoshi2" class="img2 yoshi">
+			<img src="imagens/personagens/toad2.png" id="toad2" class="img2 toad2">
+		<!--//////////////////////////////////////////////////////////-->
+
+
+		<!--ESTRELAS PARA MARCAR DE QUEM É A VEZ DE JOGAR-->
+			<img src="imagens/widgets/estrela.png" id="est1" class="est">
+			<img src="imagens/widgets/estrela.png" id="est2" class="est">
+		<!--/////////////////////////////////////////////////-->
+
+
+		<div id="inicio" class="inicio"><!--PRIMEIRA TELA DO JOGO-->
+			<img id="logo" src="imagens/widgets/logo.png">
+			<input type="button" value="1 VS 1" name="1vs1" class="botao" id="vs1" onclick="multi()"><!--SELECIONA O MODO DO JOGO-->
+			<input type="button" value="VS CPU" name="vscpu" class="botao" id="vscpu" onclick="solo()"><!--SELECIONA O MODO DO JOGO-->
+
+		<!--SELECIONA OS PERSONAGENS DO JOGADOR 1-->
+			<fieldset id="jogador1">
+				<legend> JOGADOR 1 </legend>
+				<input type="button" value="MARIO" class="select" onclick="selecionar(this)">
+				<input type="button" value="LUIGI" class="select" onclick="selecionar(this)">
+				<input type="button" value="PEACH" class="select" onclick="selecionar(this)">
+				<input type="button" value="YOSHI" class="select" onclick="selecionar(this)">
+				<input type="button" value="TOAD" class="select" onclick="selecionar(this)">
+			</fieldset>
+		<!--//////////////////////////////////////////////////////////////////////////////////////-->
+
+
+		<!--SELECIONA OS PERSONAGENS DO JOGADOR 2-->
+			<fieldset id="jogador2">
+				<legend> JOGADOR 2 </legend>
+				<input type="button" value="MARIO" class="select" onclick="selecionar2(this)">
+				<input type="button" value="LUIGI" class="select" onclick="selecionar2(this)">
+				<input type="button" value="PEACH" class="select" onclick="selecionar2(this)">
+				<input type="button" value="YOSHI" class="select" onclick="selecionar2(this)">
+				<input type="button" value="TOAD" class="select" onclick="selecionar2(this)">
+			</fieldset>
+		<!--////////////////////////////////////////////////////////////////////////////////////////-->
+
+			<input type="button" value="START" name="start" id="start" onclick="start()"><!--COMEÇAR O JOGO-->
+			
+		</div>
+	</div>
+	
+	<div id="result" class="result"><!--MOSTRA O RESULTADO DE CADA RODADA-->
+		<h2 id="texto"></h2>
+
+
+		<fieldset  id="placares"><!--PLACAR JOGADORES-->
+			<legend>PLACAR</legend>
+			<div class="placar" id="placar1" value='0'>0</div>
+			<div class="placar" id="placar2">0</div>
+		</fieldset>
+		<h3>VS</h3>
+
+
+		<input type="button" class="botao" value="CONTINUE" id="continue" onclick="continuar()"><!--PROXIMA RODADA-->
+		<input type="button" class="botao" value="RESTART" id="restarte" onclick="resetarJogo()"><!--COMEÇAR NOVO JOGO-->
+		
+	</div>
+	<img src="imagens/widgets/ajuda.png" id="ajuda" onclick="ajuda()"><!--COMO JOGAR-->
+	<img src="imagens/widgets/mostrarplacar.png" id="mostrar" onclick="mostrar()"><!--PLACAR ATUAL-->
+	</div>
+</body>
+</html>

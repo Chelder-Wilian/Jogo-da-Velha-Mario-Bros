@@ -1,0 +1,46 @@
+
+@media screen and (max-width: 1100px){
+	#est1{
+		width: 10%;
+		height: 10%;
+		float: left;
+		margin-left: 25px;
+		margin-top: -120px;
+	}
+	#est2{
+		width: 10%;
+		height: 10%;
+		float: right;
+		margin-right: 25px;
+		margin-top: -120px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.img1,.img2{
+		display: none;
+	}
+
+	#ajuda{
+		margin-right: 0px;
+	}
+
+	#mostrar{
+		margin-right: 0px;
+		margin-top: -585px;
+	}
+
+	#est1{
+		width: 10%;
+		height: 10%;
+		float: left;
+		margin-left: 35px;
+		margin-top: -610px;
+	}
+	#est2{
+		width: 10%;
+		height: 10%;
+		float: right;
+		margin-right: 35px;
+		margin-top: -610px;
+}

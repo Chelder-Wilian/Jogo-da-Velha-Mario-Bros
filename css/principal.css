@@ -1,0 +1,262 @@
+*{
+	margin: 0px; 
+	padding: 0px;
+	margin: auto;
+}
+
+body{
+	background-color: #000000;
+	margin: auto;
+	text-align: center;
+}
+
+
+h1{
+	font-weight: bold;
+}
+
+#title{	
+	font-size: 40px;
+	color: red;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+h2{	
+	color: red;
+	margin-top: 20px;
+	font-size: 45px;
+}
+
+.inicio{
+	display: block;
+	position: relative;	
+	height: 522px;
+	width: 522px;
+	margin: 0 auto;
+	background-color: lightgray;
+	border: solid 14px red;
+	margin-top: -548px;
+}
+
+.tabuleiro{
+	display: block;
+	position: relative;
+	width: 547px;
+	height: 548px;
+	background-color: red;
+	margin:0 auto;
+}
+
+.quadros{
+	background-color: white;
+	display: inline-block;
+	width: 169px;
+	height: 170px;
+	font-size: 150px;
+	font-weight: bold;
+}
+
+.quadros:hover{
+	background-color: lightgray;
+}
+
+.quadros:nth-child(2){
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.quadros:nth-child(5){
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 19px;
+	margin-top: 19px;
+}
+
+.quadros:nth-child(8){
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.quadros:nth-child(4){
+	margin-bottom:15px;
+}
+
+.quadros:nth-child(6){
+	margin-bottom:15px;
+}
+
+.quadros:nth-child(8){
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.result{
+	display: none;
+	position: relative;
+	width: 522px;
+	height: 522px;
+	background-color: lightgray;
+	border: solid 14px red;
+	margin-top: -548px;
+}
+
+.img1{
+	width: 17%;
+	height: 25%;
+	margin-top: -520px;
+	opacity: 0;
+	float: left;
+}
+
+.img2{
+	width: 17%;
+	height: 25%;
+	margin-top: -520px;
+	opacity: 0;
+	float: right;
+}
+
+#mario{
+	width: 14%;
+	opacity: 1;
+}
+
+#mario2{
+	width: 14%;
+}
+
+#luigi2{
+	opacity: 1;
+}
+
+
+#logo{
+	width: 90%;
+	height: 18%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.botao{
+	width: 200px;
+	height: 70px;
+	font-size: 30px;
+	font-family: arial;
+	border-radius: 20px;
+	margin-top: 15px;
+	border: solid black 5px;
+	background: white;
+	font-weight: bold;
+}
+
+
+fieldset{
+	width: 90%;
+	height: 18%;
+	margin-top: 10px;
+}
+
+legend{
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+}
+
+#texto{
+	font-size: 30px;
+}
+
+.select{
+	width: 18%;
+	height: 60px;
+	font-weight: bold;
+	background-color: white;
+}
+
+#start{
+	width: 40%;
+	height: 14%;
+	background-color: yellow;
+	border: 8px solid black;
+	border-radius: 50px;
+	margin-top: 3%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+#start:hover{
+	background: red;
+}
+
+
+#placares{
+	height: 150px;
+	width: 90%;
+	color: red;
+	font-size: 90px;
+}
+
+.placar{
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border: red 5px solid;
+}
+#placar1{
+	margin-left: 20px;
+}
+#placar2{
+	margin-right: 20px;
+	margin-top: -110px;
+}
+
+h3{
+	color: red;
+	font-size: 50px;
+	margin-top: -100px;
+	margin-bottom: 70px;
+}
+.select:hover{
+
+	cursor: pointer;
+}
+
+input:hover{
+	cursor: pointer;
+	background: pink;
+}
+
+#est1{
+	width: 5%;
+	height: 5%;
+	float: left;
+	margin-left: 20%;
+	margin-top: -300px;
+	opacity: 0;
+}
+#est2{
+	width: 5%;
+	height: 5%;
+	float: right;
+	margin-right: 20%;
+	margin-top: -300px;
+	opacity: 0;
+}
+
+#ajuda{
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-top: -620px;
+	margin-right: 50px;
+}
+
+#mostrar{
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-top: -620px;
+	margin-right: 100px;
+}
+

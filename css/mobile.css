@@ -1,0 +1,72 @@
+.inicioMobile{
+	display: block;
+	position: relative;	
+	height: 350px;
+	width: 400px;
+	margin: 0 auto;
+	background-color: lightgray;
+	border: solid 14px red;
+	margin-top: -350px;
+}
+
+.tabuleiroMobile{
+	display: block;
+	position: relative;
+	width: 399px;
+	height:349px;
+	background-color: red;
+}
+
+.quadrosMobile{
+	position: relative;
+	background-color: white;
+	display: inline-block;
+	width: 120px;
+	height: 106px;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.quadrosMobile:nth-child(2){
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.quadrosMobile:nth-child(5){
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.quadrosMobile:nth-child(8){
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.resultMobile{
+	display: none;
+	position: relative;
+	width: 400px;
+	height: 330px;
+	background-color: lightgray;
+	border: solid 14px red;
+	margin-top: -355px;
+}
+
+.botaoMobile{
+	width: 40%;
+	height: 10%;
+	font-size: 20px;
+	font-family: arial;
+	border-radius: 20px;
+	margin-top: 0px;
+	border: solid black 5px;
+	background: white;
+	font-weight: bold;
+}
+
+.selectMobile{
+	width: 18%;
+	height: 50%;
+}
